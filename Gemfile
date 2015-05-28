@@ -13,6 +13,7 @@ gem 'bootstrap-sass', '~> 3.3.4'
 gem "paperclip", "~> 4.2"
 
 group :production do
+	gem 'pg'
 	gem 'rails_12factor'
 end
 
@@ -22,3 +23,5 @@ group :development, :test do
   gem 'spring'
   gem 'sqlite3'
 end
+
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
